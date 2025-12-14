@@ -1,4 +1,4 @@
-# 🎯 HelpHub - AI-Powered Support Ticket System
+# HelpHub - AI-Powered Support Ticket System
 
 ![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.124+-green.svg)
@@ -7,23 +7,23 @@
 
 A production-ready support ticket management system with an intelligent conversational AI agent built using **LangChain**, **LangGraph**, and **MCP (Model Context Protocol)**. Users can create, query, and manage support tickets through natural language conversations.
 
-## ✨ Key Features
+##  Key Features
 
-### 🤖 Intelligent AI Agent
+### Intelligent AI Agent
 
 - **Natural Language Interface**: Users interact with tickets using conversational language
 - **Autonomous Tool Calling**: LangGraph-powered agent automatically selects and executes appropriate tools
 - **Context-Aware Responses**: Maintains conversation history and user context
 - **Role-Based Intelligence**: Agent adapts behavior based on user roles (admin vs regular user)
 
-### 🛠️ Agentic Architecture
+###  Agentic Architecture
 
 - **MCP Integration**: Server-client separation for scalable tool orchestration
 - **LangGraph State Management**: Robust state graph for multi-step reasoning
 - **Dynamic Tool Selection**: Agent chooses from multiple ticket management tools
 - **Async Tool Execution**: Non-blocking tool calls for optimal performance
 
-### 🔐 Production-Ready Backend
+###  Backend
 
 - **JWT Authentication**: Secure token-based authentication with Argon2 password hashing
 - **Role-Based Access Control (RBAC)**: Admin and user roles with permission management
@@ -97,7 +97,7 @@ A production-ready support ticket management system with an intelligent conversa
 └─────────────────────────────────┘
 ```
 
-## 🚀 Tech Stack
+## Tech Stack
 
 ### Core Framework
 
@@ -124,7 +124,7 @@ A production-ready support ticket management system with an intelligent conversa
 - **HTMX** - Dynamic HTML without JavaScript framework
 - **Tailwind CSS** - Utility-first CSS (via CDN)
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 
@@ -473,33 +473,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License.
 
-## 👨‍💻 Author
-
-**Adarsh Sharma**
-
-- AI Engineer specializing in LangChain, LangGraph, and Agentic Workflows
-- Expert in MCP protocol integration and conversational AI systems
-
-## 📞 Contact
-
-For freelance projects or collaboration:
-
-- Upwork: [Your Upwork Profile]
-- Email: [Your Email]
-- GitHub: [Your GitHub Profile]
-
 ---
 
-⭐ **If you find this project useful, please consider starring it on GitHub!**
-
-## 🎬 Demo
-
-[Add screenshots or GIF demos here showing:
-
-1. Login screen
-2. Dashboard with chat interface
-3. Creating a ticket via chat
-4. Viewing tickets
-5. Admin panel]
+⭐ **If you find this project useful, please consider starring it **
 
 ---
