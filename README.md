@@ -381,59 +381,7 @@ helphub/
 ```bash
 uvicorn main:app --reload
 ```
-
-### For Production
-
-1. **Use a production ASGI server:**
-
-```bash
-gunicorn main:app -w 4 -k uvicorn.workers.UvicornWorker
-```
-
-2. **Set secure environment variables**
-3. **Use PostgreSQL instead of SQLite** (update DATABASE_URL)
-4. **Enable HTTPS**
-5. **Set strong JWT_SECRET_KEY**
-6. **Change default admin password**
-
-### Docker Deployment (Optional)
-
-Create a `Dockerfile`:
-
-```dockerfile
-FROM python:3.10-slim
-
-WORKDIR /app
-
-COPY pyproject.toml uv.lock ./
-RUN pip install uv && uv sync
-
-COPY . .
-
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
-```
-
-Build and run:
-
-```bash
-docker build -t helphub .
-docker run -p 8000:8000 helphub
-```
-
-## 🎯 Use Cases for Upwork
-
-This project demonstrates expertise in:
-
-- ✅ **Agentic AI Development** - LangChain/LangGraph workflows
-- ✅ **LLM Integration** - Azure OpenAI, tool calling
-- ✅ **MCP Protocol** - Modern AI tool orchestration
-- ✅ **Full-Stack Development** - FastAPI + HTMX
-- ✅ **Authentication & Security** - JWT, RBAC
-- ✅ **Database Design** - SQLAlchemy ORM
-- ✅ **API Development** - RESTful endpoints
-- ✅ **Async Programming** - Modern Python async/await
-
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Agent doesn't respond
 
