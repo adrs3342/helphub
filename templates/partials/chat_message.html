@@ -1,0 +1,53 @@
+<div
+  class="flex {% if is_system %}justify-start{% else %}justify-end{% endif %} animate-fade-in"
+>
+  <div
+    class="max-w-2xl {% if is_system %}max-w-3xl{% endif %} px-4 py-3 {% if is_system %}bg-gray-100 text-gray-800{% else %}bg-gradient-to-r from-blue-500 to-indigo-600 text-white{% endif %} rounded-lg shadow"
+  >
+    {% if is_html %}
+    <div
+      class="prose prose-sm max-w-none {% if is_system %}prose-gray{% else %}prose-invert{% endif %}"
+    >
+      {{ message|safe }}
+    </div>
+    {% else %}
+    <p class="text-sm whitespace-pre-wrap">{{ message }}</p>
+    {% endif %} {% if is_system %}
+    <div class="mt-2 text-xs text-gray-400">
+      {{ timestamp|default('just now') }}
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.3s ease-out;
+  }
+
+  /* Style for ticket cards in messages */
+  .ticket-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .ticket-card:hover {
+    border-color: #6366f1;
+    box-shadow: 0 2px 4px rgba(99, 102, 241, 0.1);
+  }
+</style>
